@@ -1,4 +1,4 @@
 # CineMuse.Space2
-Cinemusespace website, version 2: https://cinemusespace.com
+Cinemusespace website, version 2: http://cinemusespace.com
 
 ![](cinemuse.space2/img/landingpage.jpg)
