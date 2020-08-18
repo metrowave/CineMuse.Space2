@@ -1,4 +1,4 @@
 # CineMuse.Space2
 Cinemusespace website, version 2: https://cinemusespace.com
 
-![](CineMuse.Space2/img/landingpage.jpg)
+![](cinemuse.space2/img/landingpage.jpg)
