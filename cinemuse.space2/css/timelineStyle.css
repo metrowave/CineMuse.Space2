@@ -272,6 +272,11 @@ a:hover {
     left: auto;
   }
 }
+#chart {
+	align-content: center;
+	display: block;
+  margin-top: 10px;
+}
 
 /*----------------------------------------------
     MOD: MARKER OUTLINE
