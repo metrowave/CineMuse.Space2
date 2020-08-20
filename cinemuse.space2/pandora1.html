@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>CineMuseSpace Pandora Instances</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/timelineStyle.css">
+<!-- Open Sans -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+
+<!-- FontAwesome Icon Pack -->
+<link rel="stylesheet" type="text/css" media="screen" href="./html5-video-player/packages/font-awesome/css/font-awesome.min.css" />
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" type="text/css" media="screen" href="./html5-video-player/css/html5-video-player.min.css" />
+
+<!-- jQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Main Javascript -->
+<script type="text/javascript" src="./html5-video-player/js/html5-video-player.jquery.min.js"></script>
+<script>
+		$(document).ready(function() {
+			$('#myVideo').html5_video({
+				source : {
+					"video/mp4"  : "./videos/pandora-1280.mp4",
+/*					"video/ogg"  : "videos/vid.ogv",
+					"video/webm" : "videos/vid.webm",*/
+				},
+				title: 					'Pandora Instance',
+				color: 					'#6c5c6c',
+				width: 					false,
+				poster: 				'./img/pandora.png',
+				buffering_text: 		'Buffering',
+				autoplay: 				false,
+				play_control: 			true,
+				time_indicator: 		true,
+				volume_control: 		true,
+				share_control: 			true,
+				fullscreen_control: 	true,
+				dblclick_fullscreen: 	true,
+				
+				volume: 				0.0,
+				
+				show_controls_on_load: 	true,
+				show_controls_on_pause: true,
+
+			/*	// Callbacks
+				on_play: 		function() {
+					$(".callback").html('You clicked play');
+				},
+				on_pause: 		function() {
+					$(".callback").html('You paused the video');
+				},
+				on_stop: 		function() {
+					$(".callback").html('The video stopped');
+				},
+				on_seek: 		function(seconds) {
+					$(".callback").html('You seeked to: '+seconds+' seconds');
+				},
+				on_volume: 		function(volume) {
+					$(".callback").html('You set the volume to: '+volume);
+				},
+				on_time_update: function(seconds) {
+					$(".time").html(seconds);
+				},*/
+			});
+		});
+	</script>
+<style>
+div.polaroid {
+    max-width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.27);
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html --> 
+<script src="https://use.typekit.net/bkt6ydm.js"></script> 
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<header class="example-header">
+  <h1 class="text-center">CineMuseSpace</h1>
+  <p>Pandora Instances</p>
+</header>
+<div class="container-fluid">
+  <div class="row example-split"><br>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+      <!--<div class="timeline-content">
+        <h3 class="timeline-title">Keep Cool - The Augmented Hutong Reality Experiment </h3>
+        <p>In this film sequence based on Keep Cool, a 1997 film by Zhang Yimou, the camera follows a character walking through the narrow lanes of a Hutong-Siheyuan neighbourhood in Beijing. The camera’s path is made visible by forming a solid volume across the spatial structure of the Hutong neighbourhood. It renders tangible the immaterial and temporal patterns of the film movement. The material trace of the film is revealed as each frame is inscribed in time and space at the place where it was shot. </p>
+        <h5 class="timeline-title">Animation by Amir Soltani, 3D Model by Yiqiao Sun, Directed by François Penz. </h5>
+      </div>-->
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div class="polaroid" id="myVideo"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- partial --> 
+</div>
+</body>
+</html>
