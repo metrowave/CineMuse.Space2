@@ -27,11 +27,11 @@ body {
 .Words {
 	align-self:left;
   margin: 0 auto;
-  padding: 20px 10px;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  letter-spacing: -2px;
+  padding: 20px 5px;
+ font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -3px;
   text-transform: uppercase;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -44,7 +44,7 @@ body {
 ** Apply common styles to each line of text
 */
 .Words-line {
-  height: 40px;
+  height: 43px;
   overflow: hidden;
   position:relative;
 	max-width: 60vw;
