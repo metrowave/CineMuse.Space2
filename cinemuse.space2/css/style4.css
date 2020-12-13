@@ -1,0 +1,36 @@
+body.active img {
+  -webkit-filter: grayscale(1);
+}
+
+img {
+  margin: 10px auto;
+  border: 1px solid rgba(255,255,255,0.2);
+  -webkit-transition: -webkit-filter 500ms;
+}
+.responsive {
+  width: 100vh;
+  max-width: 1200px;
+  height: auto;
+}
+
+#zoom {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 250px;
+  margin: -130px 0 0 -194px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 3px rgba(25,95,144,0.5),
+    5px 5px 10px 5px rgba(0,0,0,0.2);
+  border-radius: 10%;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.active #zoom {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+}
